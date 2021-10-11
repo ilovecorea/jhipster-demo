@@ -54,7 +54,7 @@ Consul detected as the service discovery and configuration provider used by your
 for i in blog gateway store
 do 
 cd $i 
-./mvnw package -Pprod verify jib:dockerBuild -DskipTests
+./mvnw package -Pprod -Papi-docs verify jib:dockerBuild -DskipTests
 cd ..
 done
 ```
