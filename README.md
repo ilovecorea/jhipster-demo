@@ -3,8 +3,6 @@
 **Install JHipster Apps**
 ---
 
-### Intall JHipster Apps
-
 1. Copy remove repository
 ```shell
 git clone https://github.com/ilovecorea/jhipster-demo.git jhipster
@@ -23,7 +21,8 @@ INFO! Using JHipster version installed globally
 jhipster import-jdl apps.jh
 ```
 
-### Deploy Monitoring using docker-compose
+**Deploy Monitoring using docker-compose**
+---
 
 1. Create a subfolder for the docker-compose
 ```shell
@@ -46,11 +45,9 @@ Consul detected as the service discovery and configuration provider used by your
 🐳  Welcome to the JHipster Docker Compose Sub-Generator 🐳
 ```
 
-**Build & Run Docker**
+**Build Docker Images**
 ---
 
-### Build docker images
-```shell
 for i in blog gateway store
 do 
 cd $i 
@@ -59,7 +56,9 @@ cd ..
 done
 ```
 
-### Run docker-compose
+**Run docker-compose**
+---
+
 ```shell
 docker-compose  up
 ```
