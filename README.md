@@ -48,9 +48,10 @@ Consul detected as the service discovery and configuration provider used by your
 **Build Docker Images**
 ---
 
+```shell
 for i in blog gateway store
-do 
-cd $i 
+do
+cd $i
 ./mvnw package -Pprod -Papi-docs verify jib:dockerBuild -DskipTests
 cd ..
 done
